@@ -1,0 +1,52 @@
+{
+    "push_sessions": {
+        "description": "推送报告的目标会话ID\n通过 /worklog session 获取",
+        "type": "list",
+        "default": []
+    },
+    "auto_daily_enabled": {
+        "description": "是否自动推送昨日日报",
+        "type": "bool",
+        "default": false
+    },
+    "daily_push_time": {
+        "description": "日报推送时间(HH:MM)\n例如: 09:00",
+        "type": "string",
+        "default": "09:00"
+    },
+    "auto_weekly_enabled": {
+        "description": "是否自动推送上周周报",
+        "type": "bool",
+        "default": false
+    },
+    "weekly_push_cron": {
+        "description": "周报推送Cron表达式\n默认周一09:00: 0 9 * * 1",
+        "type": "string",
+        "default": "0 9 * * 1"
+    },
+    "auto_monthly_enabled": {
+        "description": "是否自动推送上月月报",
+        "type": "bool",
+        "default": false
+    },
+    "monthly_push_cron": {
+        "description": "月报推送Cron表达式\n默认每月1日09:00: 0 9 1 * *",
+        "type": "string",
+        "default": "0 9 1 * *"
+    },
+    "ai_summary_enabled": {
+        "description": "是否用AI智能归纳报告内容\n需配置LLM提供商",
+        "type": "bool",
+        "default": true
+    },
+    "ai_provider_id": {
+        "description": "报告摘要LLM提供商ID\n留空则使用默认提供商",
+        "type": "string",
+        "default": ""
+    },
+    "use_image_report": {
+        "description": "报告是否以图片形式发送\n关闭则使用格式化文字",
+        "type": "bool",
+        "default": true
+    }
+}

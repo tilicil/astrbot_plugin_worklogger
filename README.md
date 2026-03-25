@@ -1,6 +1,10 @@
-# astrbot-plugin-helloworld
-
-AstrBot 插件模板 / A template plugin for AstrBot plugin feature
+这是一个工作日志插件
+主要功能：1.帮你记录每日工作内容。
+         2.每天定时发送昨天的工作总结，以图片的形式发送。
+         3.可以根据工作内容生成周报，月报。
+         4.可以将多个会话窗口的工作记录保存在同一个工作组中，方便从任何设备记录工作。
+剩余工作：
+         1.在生产环境中进行测试。
 
 > [!NOTE]
 > This repo is just a template of [AstrBot](https://github.com/AstrBotDevs/AstrBot) Plugin.
@@ -12,3 +16,4 @@ AstrBot 插件模板 / A template plugin for AstrBot plugin feature
 - [AstrBot Repo](https://github.com/AstrBotDevs/AstrBot)
 - [AstrBot Plugin Development Docs (Chinese)](https://docs.astrbot.app/dev/star/plugin-new.html)
 - [AstrBot Plugin Development Docs (English)](https://docs.astrbot.app/en/dev/star/plugin-new.html)
+- [AstrBot Plugin 审核报告](https://github.com/AstrBotDevs/AstrBot/issues/6918#issuecomment-4122983655)
