@@ -137,9 +137,8 @@ class Main(star.Star):
     # Lifecycle
     # ------------------------------------------------------------------
 
-    @filter.on_astrbot_loaded()
-    async def _on_loaded(self) -> None:
-        """Register cron jobs after AstrBot has fully loaded."""
+    async def initialize(self) -> None:
+        """Register cron jobs when the plugin is loaded or reloaded."""
         await self._register_cron_jobs()
 
     async def terminate(self) -> None:
